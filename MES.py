@@ -10,7 +10,7 @@ class MES:
         self.productionLine.append(ProductionLine(name))
         pass
 
-    def create_production_order(self, production_line_name, order_number:int),  
+    def create_production_order(self, production_line_name, order_number:int): 
         self.get_production_line(production_line_name).add_order(order_number)
         pass
     def produce_units(self, production_line_name, order_number, units): 
