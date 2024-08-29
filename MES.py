@@ -14,13 +14,15 @@ class MES:
         self.get_production_line(production_line_name).add_order(order_number)
         pass
     def produce_units(self, production_line_name, order_number, units): 
-        
+        #UNDONE
         pass
 
     def get_production_lines(self):
-        self.productionLine.
+        return self.productionLine
         pass 
         
     def get_production_line(self, name)->ProductionLine:
-        return "hi"
-        pass 
+        if name in self.productionLine:
+            return self.productionLine(self.productionLine.index(name))
+        else:
+            return False
